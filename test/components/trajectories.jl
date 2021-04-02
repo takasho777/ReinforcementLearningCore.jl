@@ -51,10 +51,10 @@
     @testset "CircularArraySLARTTrajectory" begin
         t = CircularArraySLARTTrajectory(
             capacity = 3,
-            state = Matrix{Float32} => (2,2),
-            legal_actions_mask = Vector{Bool} => (4, ),
+            state = Matrix{Float32} => (2, 2),
+            legal_actions_mask = Vector{Bool} => (4,),
         )
-        
+
         # test instance type is same as type
         @test isa(t, CircularArraySLARTTrajectory)
     end
